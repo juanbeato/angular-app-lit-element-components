@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import '@juanbeato/jb-layout';
 
 @Component({
   selector: 'app-root',
