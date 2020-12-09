@@ -18,9 +18,9 @@ export class AppComponent {
 
   ngOnInit() {
     this.menuItems = [
-      {"text": "home", "icon": "home"},
-      {"text": "books", "icon": "chrome-reader-mode"},
-      {"text": "profile", "icon": "account-circle"}
+      {"text": "Home", "icon": "home"},
+      {"text": "Books", "icon": "chrome-reader-mode"},
+      {"text": "Profile", "icon": "account-circle"}
     ];
     this.navigateMenuUrls = [
       'home',

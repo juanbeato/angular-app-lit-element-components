@@ -1,18 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'assets/scss/modules/_fonts.scss';
 
-$bgColor: #F8F8F8;
-$primaryColor: #FF6B03;
-$menuItemColor: #666666;
-$whiteColor: #FFFFFF;
+// colors
+$bg-color: #F8F8F8;
+$primary-color: #FF6B03;
+$menu-item-color: #666666;
+$white-color: #FFFFFF;
+
+// fonts
+$primary-font: 'SF Pro Text';
+
+// font-weight
+$thin:100;
+$light:300;
+$regular:400;
+$bold:700;
+$black:900;
+
+// Font size
+$font-xs:12px;
+$font-sm: 14px;
+$primary-fs: 16px;
+$font-md: 18px;
+$font-lg: 20px;
 
 html {
-    background-color: $bgColor;
+    background-color: $bg-color;
+}
+
+* {
+    font-family: $primary_font;
+    font-size: $primary-fs;
+    font-weight: $regular;
 }
 
 jb-menu {
+    font-size: 12px;
     --jb-menu-padding-bottom: 32px;
     --jb-menu-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-    --jb-menu-bg-color: #{$whiteColor};
-    --jb-menu-item-selected-color: #{$primaryColor};
-    --jb-menu-item-color: #{$menuItemColor};
+    --jb-menu-bg-color: #{$white-color};
+    --jb-menu-item-selected-color: #{$primary-color};
+    --jb-menu-item-color: #{$menu-item-color};
 }
