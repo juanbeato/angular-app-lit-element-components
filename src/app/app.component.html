@@ -18,7 +18,7 @@
   }
 </style>
 <jb-layout>
-  <p slot="footer">I am a footer.</p>
+  <jb-menu slot="footer" full [items]='menuItems' (jb-menu-item-clicked)="navigateFromMenu($event)"></jb-menu>
 </jb-layout>
 
 <router-outlet></router-outlet>
