@@ -14,6 +14,7 @@ $primary-font: 'SF Pro Text';
 $thin:100;
 $light:300;
 $regular:400;
+$medium:500;
 $bold:700;
 $black:900;
 
@@ -26,6 +27,10 @@ $font-lg: 20px;
 
 html {
     background-color: $bg-color;
+}
+
+body {
+    margin: 8px 20px;
 }
 
 * {
@@ -41,4 +46,21 @@ jb-menu {
     --jb-menu-bg-color: #{$white-color};
     --jb-menu-item-selected-color: #{$primary-color};
     --jb-menu-item-color: #{$menu-item-color};
+    --jb-menu-item-icon-width: 32px;
+    --jb-menu-item-icon-height: 32px;
+    --jb-menu-item-p-margin-top: 0;
 }
+
+jb-header {
+    --jb-header-p-padding-top: 8px;
+    --jb-header-p-padding-bottom: 8px;
+    --jb-header-left-container-font-weight: #{$medium};
+}
+
+iron-image {
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+  }
