@@ -6,6 +6,8 @@ $bg-color: #F8F8F8;
 $primary-color: #FF6B03;
 $menu-item-color: #666666;
 $white-color: #FFFFFF;
+$card-title-color: #333333;
+$card-time-color: #999999;
 
 // fonts
 $primary-font: 'SF Pro Text';
@@ -55,6 +57,26 @@ jb-header {
     --jb-header-p-padding-top: 8px;
     --jb-header-p-padding-bottom: 8px;
     --jb-header-left-container-font-weight: #{$medium};
+}
+
+jb-product-card {
+    --jb-product-card-button-primary-bg: #{$primary-color};
+    --jb-product-card-button-primary-color: #{$bg-color};
+    --jb-product-card-button-border-radius: 20px;
+    --jb-product-card-horizontal-data-container-margin-left: 24px;
+    --jb-product-card-horizontal-image-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    --jb-product-card-horizontal-main-container-margin-top: 20px;
+    --jb-product-card-data-container-title-font-weight: #{$medium};
+    --jb-product-card-image-border-radius: 8px;
+    --jb-product-card-horizontal-data-container-title-font-size: 16px;
+    --jb-product-card-horizontal-data-container-description-font-size: 13px;
+    --jb-product-card-data-container-description-color: #{$menu-item-color};
+    --jb-product-card-data-container-title-color: #{$card-title-color};
+    --jb-product-card-data-container-footer-left-color: #{$card-time-color};
+    --jb-product-card-button-padding-vertical: 4px;
+    --jb-product-card-button-padding-horizontal: 10px;
+    --jb-product-card-data-container-footer-left-font-size: 12px;
+    --jb-product-card-data-container-footer-right-font-size: 12px;
 }
 
 iron-image {

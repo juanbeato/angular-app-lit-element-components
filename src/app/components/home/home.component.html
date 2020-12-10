@@ -10,3 +10,11 @@
     lefttext="Latested"
     righticon="chevron-right">
 </jb-header>
+<jb-product-card *ngFor="let item of latestedItems"
+    [attr.productimage]="item.image"
+    [attr.producttitle]="item.title"
+    [attr.productdescription]="item.description"
+    [attr.producttime]="item.time"
+    [attr.productprice]="item.price"
+    productalign="horizontal"
+    buttontext="Free"></jb-product-card>
