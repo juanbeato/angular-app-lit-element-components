@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import '@juanbeato/jb-header';
-import '@juanbeato/jb-product-card';
+import '@juanbeato/jb-product-card-list';
 import '@polymer/iron-image/iron-image.js';
 
 @Component({
@@ -10,6 +10,7 @@ import '@polymer/iron-image/iron-image.js';
 })
 export class HomeComponent implements OnInit {
   latestedItems: Object[];
+  featuredItems: Object[];
 
   constructor() { }
 
@@ -20,34 +21,69 @@ export class HomeComponent implements OnInit {
         title: 'Title example',
         description: 'Minions ipsum poulet tikka masala ti aamoo! Jiji. Uuuhhh baboiii poulet tikka masala jeje poopayee bananaaaa bee do bee do bee do ti aamoo! Butt. Daa baboiii poulet tikka masala la bodaaa tulaliloo. Hahaha baboiii chasy pepete poulet tikka masala bee do bee do bee do tank yuuu! Gelatooo la bodaaa. Para tú chasy underweaaar hana dul sae po kass bananaaaa.',
         time: '12:20:22',
-        price: '$23'
-      },
-      {
-        image: 'https://picsum.photos/240/352',
-        title: 'Title example',
-        description: 'Minions ipsum poulet tikka masala ti aamoo! Jiji. Uuuhhh baboiii poulet tikka masala jeje poopayee bananaaaa bee do bee do bee do ti aamoo! Butt. Daa baboiii poulet tikka masala la bodaaa tulaliloo. Hahaha baboiii chasy pepete poulet tikka masala bee do bee do bee do tank yuuu! Gelatooo la bodaaa. Para tú chasy underweaaar hana dul sae po kass bananaaaa.',
-        time: '12:20:22'
+        price: '$23',
+        buttonText: 'Free'
       },
       {
         image: 'https://picsum.photos/240/352',
         title: 'Title example',
         description: 'Minions ipsum poulet tikka masala ti aamoo! Jiji. Uuuhhh baboiii poulet tikka masala jeje poopayee bananaaaa bee do bee do bee do ti aamoo! Butt. Daa baboiii poulet tikka masala la bodaaa tulaliloo. Hahaha baboiii chasy pepete poulet tikka masala bee do bee do bee do tank yuuu! Gelatooo la bodaaa. Para tú chasy underweaaar hana dul sae po kass bananaaaa.',
         time: '12:20:22',
-        price: '$12.99'
+        buttonText: 'Free'
       },
       {
         image: 'https://picsum.photos/240/352',
         title: 'Title example',
         description: 'Minions ipsum poulet tikka masala ti aamoo! Jiji. Uuuhhh baboiii poulet tikka masala jeje poopayee bananaaaa bee do bee do bee do ti aamoo! Butt. Daa baboiii poulet tikka masala la bodaaa tulaliloo. Hahaha baboiii chasy pepete poulet tikka masala bee do bee do bee do tank yuuu! Gelatooo la bodaaa. Para tú chasy underweaaar hana dul sae po kass bananaaaa.',
-        time: '12:20:22'
+        time: '12:20:22',
+        price: '$12.99',
+        buttonText: 'Free'
       },
       {
         image: 'https://picsum.photos/240/352',
         title: 'Title example',
         description: 'Minions ipsum poulet tikka masala ti aamoo! Jiji. Uuuhhh baboiii poulet tikka masala jeje poopayee bananaaaa bee do bee do bee do ti aamoo! Butt. Daa baboiii poulet tikka masala la bodaaa tulaliloo. Hahaha baboiii chasy pepete poulet tikka masala bee do bee do bee do tank yuuu! Gelatooo la bodaaa. Para tú chasy underweaaar hana dul sae po kass bananaaaa.',
-        time: '12:20:22'
+        time: '12:20:22',
+        buttonText: 'Free'
+      },
+      {
+        image: 'https://picsum.photos/240/352',
+        title: 'Title example',
+        description: 'Minions ipsum poulet tikka masala ti aamoo! Jiji. Uuuhhh baboiii poulet tikka masala jeje poopayee bananaaaa bee do bee do bee do ti aamoo! Butt. Daa baboiii poulet tikka masala la bodaaa tulaliloo. Hahaha baboiii chasy pepete poulet tikka masala bee do bee do bee do tank yuuu! Gelatooo la bodaaa. Para tú chasy underweaaar hana dul sae po kass bananaaaa.',
+        time: '12:20:22',
+        buttonText: 'Free'
       },
     ];
+
+    this.featuredItems = [
+      {
+        image: 'https://picsum.photos/240/352',
+        title: 'Title example',
+        price: '$23',
+        buttonText: 'Free'
+      },
+      {
+        image: 'https://picsum.photos/240/352',
+        title: 'Title example',
+        buttonText: 'Free'
+      },
+      {
+        image: 'https://picsum.photos/240/352',
+        title: 'Title example',
+        price: '$19.99',
+        buttonText: 'Free'
+      },
+      {
+        image: 'https://picsum.photos/240/352',
+        title: 'Title example',
+        buttonText: 'Free'
+      },
+      {
+        image: 'https://picsum.photos/240/352',
+        title: 'Title example',
+        buttonText: 'Free'
+      },
+    ]
   }
 
 }

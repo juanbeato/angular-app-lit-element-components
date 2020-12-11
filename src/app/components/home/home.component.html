@@ -1,20 +1,14 @@
 <jb-header
     lefttext="Home">
-    <iron-image slot="right" sizing="cover" preload src="http://lorempixel.com/400/400/people"></iron-image>
+    <iron-image slot="right" sizing="cover" preload src="https://picsum.photos/400/400"></iron-image>
 </jb-header>
 <jb-header
     lefttext="Featured"
     righticon="chevron-right">
 </jb-header>
+<jb-product-card-list itemview='vertical' [cards]="featuredItems"></jb-product-card-list >
 <jb-header
     lefttext="Latested"
     righticon="chevron-right">
 </jb-header>
-<jb-product-card *ngFor="let item of latestedItems"
-    [attr.productimage]="item.image"
-    [attr.producttitle]="item.title"
-    [attr.productdescription]="item.description"
-    [attr.producttime]="item.time"
-    [attr.productprice]="item.price"
-    productalign="horizontal"
-    buttontext="Free"></jb-product-card>
+<jb-product-card-list  itemview='horizontal' [cards]="latestedItems"></jb-product-card-list >
