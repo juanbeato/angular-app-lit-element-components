@@ -27,12 +27,17 @@ $primary-fs: 16px;
 $font-md: 18px;
 $font-lg: 20px;
 
+//shadows
+$image-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+$menu-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+$avatar-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+
 html {
     background-color: $bg-color;
 }
 
 body {
-    margin: 8px 20px;
+    margin: 0;
 }
 
 * {
@@ -44,7 +49,7 @@ body {
 jb-menu {
     font-size: 12px;
     --jb-menu-padding-bottom: 32px;
-    --jb-menu-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    --jb-menu-box-shadow: #{$menu-shadow};
     --jb-menu-bg-color: #{$white-color};
     --jb-menu-item-selected-color: #{$primary-color};
     --jb-menu-item-color: #{$menu-item-color};
@@ -57,6 +62,8 @@ jb-header {
     --jb-header-p-padding-top: 8px;
     --jb-header-p-padding-bottom: 8px;
     --jb-header-left-container-font-weight: #{$medium};
+    --jb-header-p-padding-right: 20px;
+    --jb-header-p-padding-left: 20px;
 }
 
 jb-product-card-list {
@@ -64,12 +71,13 @@ jb-product-card-list {
     --jb-product-card-list-container-item-button-primary-color: #{$bg-color};
     --jb-product-card-list-container-item-button-border-radius: 20px;
     --jb-product-card-list-horizontal-container-item-data-container-margin-left: 24px;
-    --jb-product-card-list-horizontal-container-item-image-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-    --jb-product-card-list-vertical-container-item-image-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    --jb-product-card-list-horizontal-container-item-image-box-shadow: #{$image-shadow};
+    --jb-product-card-list-vertical-container-item-image-box-shadow: #{$image-shadow};
     --jb-product-card-list-container-item-data-container-title-font-weight: #{$medium};
     --jb-product-card-list-container-item-image-border-radius: 8px;
     --jb-product-card-list-horizontal-container-item-data-container-title-font-size: 16px;
     --jb-product-card-list-vertical-container-item-data-container-title-font-size: 16px;
+    --jb-product-card-list-container-item-image-skeleton-height: 164px;
     --jb-product-card-list-horizontal-container-item-data-container-description-font-size: 13px;
     --jb-product-card-list-container-item-data-container-description-color: #{$menu-item-color};
     --jb-product-card-list-container-item-data-container-title-color: #{$card-title-color};
@@ -79,6 +87,32 @@ jb-product-card-list {
     --jb-product-card-list-container-item-data-container-footer-left-font-size: 12px;
     --jb-product-card-list-container-item-data-container-footer-right-font-size: 12px;
     --jb-product-card-list-container-item-main-container-min-height: 105px;
+    --jb-product-card-list-container-padding-left: 20px;
+    --jb-product-card-list-container-item-border-radius: 8px;
+    --jb-product-card-list-image-skeleton-box-shadow: #{$image-shadow};
+}
+
+jb-product-card-list[itemview='horizontal'] {
+    --jb-product-card-list-container-padding-right: 20px;
+}
+
+jb-product-card-list[itemview='banner'] {
+    --jb-product-card-list-container-item-box-shadow: #{$image-shadow};
+    --jb-product-card-list-vertical-container-item-min-width: 90%;
+    --jb-product-card-list-banner-main-container-height: 140px;
+    --jb-product-card-list-container-margin-top: 0;
+    --jb-product-card-list-container-margin-bottom: 0;
+    --jb-product-card-list-container-padding-top: 20px;
+    --jb-product-card-list-container-padding-bottom: 24px;
+    --jb-product-card-list-banner-data-container-flex-direction: column-reverse;
+    --jb-product-card-list-banner-data-container-title-font-size: 50px;
+    --jb-product-card-list-banner-data-container-subtitle-font-size: 24px;
+    --jb-product-card-list-banner-data-container-title-line-height: 35px;
+    --jb-product-card-list-banner-data-container-subtitle-letter-spacing: 5px;
+    --jb-product-card-list-banner-data-container-title-margin-left: 12px;
+    --jb-product-card-list-banner-data-container-title-margin-right: 12px;
+    --jb-product-card-list-banner-data-container-subtitle-margin-left: 12px;
+    --jb-product-card-list-banner-data-container-subtitle-margin-right: 12px;
 }
 
 iron-image {
@@ -86,5 +120,5 @@ iron-image {
     height: 40px;
     background-color: lightgray;
     border-radius: 50%;
-    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: #{$avatar-shadow}
   }

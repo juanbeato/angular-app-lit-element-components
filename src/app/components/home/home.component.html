@@ -2,13 +2,21 @@
     lefttext="Home">
     <iron-image slot="right" sizing="cover" preload src="https://picsum.photos/400/400"></iron-image>
 </jb-header>
+<jb-product-card-list 
+    orientation='horizontal'
+    itemview='banner' 
+    [cards]="banners"
+    [skeletonConfig]="horizontalSkeletonConfig"></jb-product-card-list >
 <jb-header
     lefttext="Featured"
     righticon="chevron-right">
 </jb-header>
-<jb-product-card-list itemview='vertical' [cards]="featuredItems"></jb-product-card-list >
+<jb-product-card-list orientation='horizontal' itemview='vertical' [cards]="featuredItems"></jb-product-card-list >
 <jb-header
     lefttext="Latested"
     righticon="chevron-right">
 </jb-header>
-<jb-product-card-list  itemview='horizontal' [cards]="latestedItems"></jb-product-card-list >
+<jb-product-card-list 
+    itemview='horizontal' 
+    [cards]="latestedItems"
+    [skeletonConfig]="horizontalSkeletonConfig"></jb-product-card-list >
